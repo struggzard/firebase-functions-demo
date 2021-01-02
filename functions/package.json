@@ -5,6 +5,7 @@
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
@@ -17,8 +18,11 @@
     "firebase-functions": "^3.11.0"
   },
   "devDependencies": {
-    "typescript": "^3.8.0",
-    "firebase-functions-test": "^0.2.0"
+    "@types/mocha": "^8.2.0",
+    "firebase-functions-test": "^0.2.3",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^3.8.0"
   },
   "private": true
 }

@@ -67,3 +67,4 @@ node_modules/
 
 # Other excludes
 /.idea/
+/functions/serviceAccountKey.json
